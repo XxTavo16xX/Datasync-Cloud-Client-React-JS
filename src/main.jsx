@@ -18,13 +18,32 @@ import DesktopView from './app/views/DesktopView'
 
 // * view to Return
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <AppProvider>
+const initOS = () => {
 
-      <DesktopView />
+  const rootView = document.getElementById('root')
+
+  rootView.style.transition = '.6s'
+  setTimeout(() => { rootView.style.opacity = '0' }, 200)
+
+  setTimeout(() => {
+
+    ReactDOM.createRoot(document.getElementById('root')).render(
+      <React.StrictMode>
+        <AppProvider>
+
+          <DesktopView />
 
 
-    </AppProvider>
-  </React.StrictMode>,
-)
+        </AppProvider>
+      </React.StrictMode>,
+    )
+
+    setTimeout(() => { rootView.style.opacity = '1' }, 200)
+
+    setTimeout(() => { rootView.style.transition = '0s' }, 400)
+
+  }, 600)
+
+}
+
+initOS()
