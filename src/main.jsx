@@ -14,14 +14,16 @@ import './index.css'
 
 // * Components Required
 
+import DesktopView from './app/views/DesktopView'
+
 // * view to Return
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <AppProvider>
 
+      <DesktopView />
 
-      
 
     </AppProvider>
   </React.StrictMode>,
