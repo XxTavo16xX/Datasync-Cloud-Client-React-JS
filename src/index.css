@@ -1,13 +1,3 @@
-@keyframes rootIn {
-  0% {
-    background-color: #000000;
-  }
-
-  100% {
-    background-color: #000d41;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -26,9 +16,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation-name: rootIn;
-  animation-duration: .6s;
-  animation-fill-mode: forwards;
+  transition: .6s;
 }
 
 .root-loading-os-logo {

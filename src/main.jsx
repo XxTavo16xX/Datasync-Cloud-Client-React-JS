@@ -22,7 +22,6 @@ const initOS = () => {
 
   const rootView = document.getElementById('root')
 
-  rootView.style.transition = '.6s'
   setTimeout(() => { rootView.style.opacity = '0' }, 200)
 
   setTimeout(() => {
