@@ -1,0 +1,9 @@
+.Desktop-Wallpaper-Container {
+    width: 100%;
+    height: 100%;
+    background: #e9f8ff;
+    background: -moz-linear-gradient(139deg, rgba(233, 248, 255, 1) 0%, rgba(0, 42, 68, 1) 0%, rgba(198, 213, 255, 1) 100%);
+    background: -webkit-linear-gradient(139deg, rgba(233, 248, 255, 1) 0%, rgba(0, 42, 68, 1) 0%, rgba(198, 213, 255, 1) 100%);
+    background: linear-gradient(139deg, rgba(233, 248, 255, 1) 0%, rgba(0, 42, 68, 1) 0%, rgba(198, 213, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e9f8ff", endColorstr="#c6d5ff", GradientType=1);
+}
